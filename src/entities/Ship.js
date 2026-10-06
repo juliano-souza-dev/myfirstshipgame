@@ -3,7 +3,7 @@ export class Ship extends Entity {
   constructor(id, x = 0, y = 0) {
     super(id, x, y);
 
-    this.speed = 100;
+    this.speed = 150;
     this.health = 100;
     this.width = "40";
     this.height = "20";

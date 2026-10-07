@@ -5,9 +5,9 @@ export class Ship extends Entity {
 
     this.speed = 150;
     this.health = 100;
-    this.width = "40";
-    this.height = "20";
-
+    this.width = "250";
+    this.height = "250";
+    this.angle = 0;
     this.directionX = 1;
     this.directionY = 1;
   }

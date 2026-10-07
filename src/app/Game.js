@@ -17,6 +17,9 @@ export class Game {
     this.playerShip = new Ship("player1", 100, 100);
     this.world.addEntity(this.playerShip);
 
+
+
+
     this.input = new Input();
 
 this.loop = new GameLoop(
@@ -50,6 +53,15 @@ if(this.input.isPressed("a")){
 }
 
   this.playerShip.move(deltatime);
+  if (
+  this.playerShip.directionX !== 0 ||
+  this.playerShip.directionY !== 0
+) {
+  this.playerShip.angle = Math.atan2(
+    this.playerShip.directionY,
+    this.playerShip.directionX
+  );
+}
 
   }
   render() {
